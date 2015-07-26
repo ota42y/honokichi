@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+    {{ partial "navbar.html" . }}
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1 id="type">最近のブログ投稿</h1>
+                </div>
+
+                {{ range $name, $page := first 9 (where .Site.Pages "Section" "blog") }}
+                {{ partial "headline.html" $page }}
+                {{ end }}
+
+                <a href="/blog/" class="archives">>> 過去の記事</a>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+{{ partial "footer.html" . }}

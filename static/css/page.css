@@ -1,0 +1,61 @@
+.article_title a{
+    color: inherit;
+}
+
+#toc {
+    padding-left: 15px;
+    float: right;
+}
+
+#toc #toc_body{
+    background-color: #F9F9F9;
+    border: 1px solid #AAAAAA;
+    font-size: 95%;
+    padding-right: 10px;
+}
+
+#toc #toc_index {
+    font-weight: bold;
+    text-align: center;
+}
+
+#toc ul {
+    padding-bottom: 0;
+}
+
+#toc li {
+    list-style: decimal inside;
+}
+
+.social_buttons {
+    margin-top: 50px;
+}
+
+.article h1{
+    padding-left: 10px;
+    border-left: thick solid #2196f3;
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+.article h2{
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.article h3{
+    margin-top: 30px;
+    font-size: 19px;
+}
+
+.article h4{
+    font-size: 16px;
+}
+
+.article h5{
+    font-size: 12px;
+}
+
+.article h6{
+    font-size: 10px;
+}

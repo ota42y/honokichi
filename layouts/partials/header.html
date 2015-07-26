@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="{{ .Title }}">
+    <meta name="author" content="ota42y">
+
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/css/page.css">
+    <link rel="stylesheet" type="text/css" href="/css/list.css">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>
+        hljs.configure({tabReplace: '    '}); // 4 spaces
+        hljs.initHighlightingOnLoad();
+    </script>
+
+    {{ if eq .Site.Title .Title }}
+    <title>{{ .Site.Title }}</title>
+    {{ else }}
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    {{ end }}
+</head>
+
+
+<body>

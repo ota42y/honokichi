@@ -1,0 +1,64 @@
+<header>
+    <div class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+              <a href="/" class="navbar-brand">{{ .Site.Title }}</a>
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li
+                      {{ if eq .URL  "/" }}
+                      class="active"
+                      {{ end }}
+                      ><a href="/">Top</a></li>
+
+                    <li
+                      {{ if .IsPage}}
+                      {{ $url := substr .RelPermalink 0 6}}
+                      {{ if eq $url "/blog/"}}
+                      class="active"
+                      {{ end }}
+
+                      {{ else }}
+                      {{ $url := substr .URL 0 6}}
+                      {{ if eq $url "/blog/"}}
+                      class="active"
+                      {{ end }}
+                      {{ end }}
+
+                      ><a href="/blog/">Blog</a></li>
+                    <li
+                      {{ $url := substr .URL 0 6}}
+
+                      {{ if eq $url "/tags/"}}
+                      class="active"
+                      {{ end }}
+                      ><a href="/tags/">Tags</a></li>
+
+                    <li
+                      {{ $url := substr .URL 0 7}}
+
+                      {{ if eq $url "/pages/"}}
+                      class="active"
+                      {{ end }}
+                      ><a href="/pages/">Pages</a></li>
+                </ul>
+                <p class="navbar-text navbar-right"><a class="navbar-link" href="{{ .RSSLink}}">rss</a></p>
+
+                {{ if or .Site.Params.social.github }}
+                <p class="navbar-text navbar-right"><a class="navbar-link" href="https://github.com/{{.Site.Params.social.github}}">github</a></p>
+                {{ end }}
+
+                {{ if or .Site.Params.social.twitter_id }}
+                <p class="navbar-text navbar-right"><a class="navbar-link" href="https://twitter.com/{{.Site.Params.social.twitter_id}}">twitter</a></p>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</header>

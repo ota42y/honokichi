@@ -1,0 +1,21 @@
+<p class="post_detail">
+    {{ if .Date.IsZero  }}
+    {{ else }}
+    <time datetime="{{ .Date.Format "2006-01-02" }}" class="post_data">
+    {{ .Date.Format "2006-01-02" }}
+    </time>
+    {{ end }}
+
+    {{ if or .Params.tags }}
+    <span class="separator">|</span>
+    <span class="post_data">tags: [</span>
+
+    {{ range .Params.tags}}
+    <span class="post_data">
+        <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+    </span>
+    {{ end }}
+
+    <span class="post_data">]</span>
+    {{ end }}
+</p>

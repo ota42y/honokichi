@@ -1,0 +1,26 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="page-header">
+                <h1 class="article_title">{{ .Title }}</h1>
+            </div>
+
+            {{ $data := .Data }}
+            {{ range $key, $value := .Data.Terms.ByCount }}
+
+            <li>
+                <h2 class="tag_name"><a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a></h2>
+                <div class="tag_count">{{len ($value.WeightedPages) }} posts</div>
+                <div class="clear"></div>
+            </li>
+
+            {{ end }}
+        </div>
+    </div>
+</div>
+<!-- /.container -->
+
+{{ partial "footer.html" . }}

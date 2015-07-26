@@ -1,0 +1,376 @@
+
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="OctopressからHugoに乗り換えた">
+    <meta name="author" content="ota42y">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/page.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/list.css">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>
+        hljs.configure({tabReplace: '    '});
+        hljs.initHighlightingOnLoad();
+    </script>
+
+
+
+
+        <title>pixivのタグから読み解くラブライブカップリング傾向(2014年11月現在) | おおたの物置</title>
+
+    </head>
+
+
+    <body>
+
+    <header>
+        <div class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                  <a href="/" class="navbar-brand">おおたの物置</a>
+                  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
+
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <ul class="nav navbar-nav">
+                        <li
+
+                          ><a href="/">Top</a></li>
+
+                        <li
+
+
+
+                          class="active"
+
+
+
+
+                          ><a href="/blog/">Blog</a></li>
+                        <li
+
+
+
+                          ><a href="/tags/">Tags</a></li>
+
+                        <li
+
+
+
+                          ><a href="/pages/">Pages</a></li>
+                    </ul>
+                    <p class="navbar-text navbar-right"><a class="navbar-link" href="">rss</a></p>
+
+
+                    <p class="navbar-text navbar-right"><a class="navbar-link" href="https://github.com/ota42y">github</a></p>
+
+
+
+                    <p class="navbar-text navbar-right"><a class="navbar-link" href="https://twitter.com/ota42y">twitter</a></p>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                  <h1 class="article_title"><a href="/blog/2014/12/26/lovelive-cp/">pixivのタグから読み解くラブライブカップリング傾向(2014年11月現在)</a></h1>
+                  <p class="post_detail">
+
+        <time datetime="2014-12-26" class="post_data">
+        2014-12-26
+        </time>
+
+
+
+        <span class="separator">|</span>
+        <span class="post_data">tags: [</span>
+
+
+        <span class="post_data">
+            <a href="/tags/memo">memo</a>
+        </span>
+
+
+        <span class="post_data">]</span>
+
+    </p>
+
+                </div>
+
+
+                <div id="toc">
+                    <div id="toc_body">
+                        <div id="toc_index">目次</div>
+                        <nav id="TableOfContents">
+    <ul>
+    <li><a href="#収集方法:35d6efcbb240bfd8ea8ff0f2532638b7">収集方法</a></li>
+    <li><a href="#順番を加味しない場合:35d6efcbb240bfd8ea8ff0f2532638b7">順番を加味しない場合</a>
+    <ul>
+    <li><a href="#収集結果:35d6efcbb240bfd8ea8ff0f2532638b7">収集結果</a></li>
+    <li><a href="#グラフ:35d6efcbb240bfd8ea8ff0f2532638b7">グラフ</a>
+    <ul>
+    <li><a href="#1-000-000以上のみ:35d6efcbb240bfd8ea8ff0f2532638b7">1,000,000以上のみ</a></li>
+    <li><a href="#100-000以上のみ:35d6efcbb240bfd8ea8ff0f2532638b7">100,000以上のみ</a></li>
+    </ul></li>
+    </ul></li>
+    <li><a href="#順番を加味する場合:35d6efcbb240bfd8ea8ff0f2532638b7">順番を加味する場合</a>
+    <ul>
+    <li><a href="#集計結果:35d6efcbb240bfd8ea8ff0f2532638b7">集計結果</a></li>
+    <li><a href="#グラフ-1:35d6efcbb240bfd8ea8ff0f2532638b7">グラフ</a></li>
+    </ul></li>
+    <li><a href="#カップリングイラスト投稿数推移:35d6efcbb240bfd8ea8ff0f2532638b7">カップリングイラスト投稿数推移</a>
+    <ul>
+    <li><a href="#投稿数1-000-000以上:35d6efcbb240bfd8ea8ff0f2532638b7">投稿数1,000,000以上</a></li>
+    <li><a href="#上位２組以外:35d6efcbb240bfd8ea8ff0f2532638b7">上位２組以外</a></li>
+    </ul></li>
+    <li><a href="#まとめ:35d6efcbb240bfd8ea8ff0f2532638b7">まとめ</a></li>
+    <li><a href="#次回予告:35d6efcbb240bfd8ea8ff0f2532638b7">次回予告</a></li>
+    </ul>
+    </nav>
+                    </div>
+                </div>
+
+
+                <div class="article">
+
+
+    <p><a href="/blog/2014/12/25/lovelive/">昨日</a>はラブライブタグ全体と、各キャラについて見ていきましたが、<br />
+    今日はカップリングについて見ていきます。</p>
+
+    <p>なお、既に調べられていたので、半分ぐらいはその内容のアップデートになります。<br />
+    <a href="http://iwiwi.hatenadiary.jp/entry/2014/06/28/003736">pixiv のタグ情報を用いた「ラブライブ！ School idol project」のカップリングネットワークの構築</a></p>
+
+    <h1 id="収集方法:35d6efcbb240bfd8ea8ff0f2532638b7">収集方法</h1>
+
+    <p>pixivのタグから、各カップリングタグ（「にこまき」、「のぞえり」等）とラブライブタグがついているものを収集し、
+    そのイラストの閲覧数の和を集計しました。</p>
+
+    <p>条件にラブライブタグを含めないと、高坂雪穂と星空凛の「ゆきりん」タグで別のゆきりんが引っかかる等、<br />
+    ラブライブとは関係のないものも含まれてしまうため、このような条件にしています。</p>
+
+    <p>また、「まきりんぱな」や「ことほのうみ」といった３人を含むタグについては、<br />
+    「まきりん」と「りんぱな」として集計することはせず、結果から除外しています。</p>
+
+    <p>なお、元となったエントリの詳しい収集方法がわからないため、<br />
+    単純な数値比較は出来ませんのでご注意ください。</p>
+
+    <h1 id="順番を加味しない場合:35d6efcbb240bfd8ea8ff0f2532638b7">順番を加味しない場合</h1>
+
+    <p>「にこまき」と「まきにこ」を同一視する場合です。</p>
+
+    <h2 id="収集結果:35d6efcbb240bfd8ea8ff0f2532638b7">収集結果</h2>
+
+    <p>(クリックで大きく見られます)</p>
+
+    <p><a href="http://ota42y.com/images/blog/2014/2014-12-26-lovelive_cp.png"><img src="http://ota42y.com/images/blog/2014/2014-12-26-lovelive_cp.png"  width="100%" /></a></p>
+
+    <p>にこまきの人気は相変わらず圧倒的です
+    時点がのぞえりなのも前回から変わりません。<br />
+    ですが、３番目のことうみが、前回よりも他を大きく引き離してきています。</p>
+
+    <p>また、つばほのがマイナーカップリングを凌ぐほどの人気になっていたり、<br />
+    ゆきありが地味に伸びていたりと、メインキャラ以外の部分にも多少変化があります。</p>
+
+    <h2 id="グラフ:35d6efcbb240bfd8ea8ff0f2532638b7">グラフ</h2>
+
+    <h3 id="1-000-000以上のみ:35d6efcbb240bfd8ea8ff0f2532638b7">1,000,000以上のみ</h3>
+
+    <p>元記事に習い、1,000,000未満の辺がﾐﾄﾒﾗﾚﾅｲ場合、組み合わせはこのようなグラフになります。</p>
+
+    <p><img src="http://ota42y.com/images/blog/2014/2014-12-26-lovelive_1000000.png" alt="1000000" />
+    </p>
+
+    <p>前回は生徒会グループと、広義の一年生グループとに別れていましたが、<br />
+    ほのまきとのぞにこの人気が上がったことにより、全てが繋がりました。</p>
+
+    <p>また、高坂穂乃果は4種類のカップリングがあり、最もカップリングの種類が多いキャラになっています。</p>
+
+    <h3 id="100-000以上のみ:35d6efcbb240bfd8ea8ff0f2532638b7">100,000以上のみ</h3>
+
+    <p>100,000未満の辺がﾐﾄﾒﾗﾚﾅｲ場合は以下のようなグラフになります。</p>
+
+    <p><img src="http://ota42y.com/images/blog/2014/2014-12-26-lovelive_100000.png" alt="100000" />
+    </p>
+
+    <p>西木野真姫、絢瀬絵里、高坂穂乃果に線が集中し、りんぱなにはそれほど線がありません。<br />
+    また、高坂雪穂と絢瀬亜里沙はどちらも実の姉とは繋がっていないのがわかります。</p>
+
+    <p>最もカップリングが多いのは、μ&rsquo;sメンバー全員と繋がっている西木野真姫と、<br />
+    8人＋綺羅ツバサと繋がっている高坂穂乃果になります。</p>
+
+    <h1 id="順番を加味する場合:35d6efcbb240bfd8ea8ff0f2532638b7">順番を加味する場合</h1>
+
+    <p>「にこまき」と「まきにこ」を別物として数えます。</p>
+
+    <h2 id="集計結果:35d6efcbb240bfd8ea8ff0f2532638b7">集計結果</h2>
+
+    <p>行＋列のカップリングスコアになります。<br />
+    (クリックで大きく見られます)</p>
+
+    <p><a href="http://ota42y.com/images/blog/2014/2014-12-26-lovelive_cp_dict.png"><img src="http://ota42y.com/images/blog/2014/2014-12-26-lovelive_cp_dict.png"  width="100%" /></a></p>
+
+    <p>複数のイラストを含んだ投稿などで、「のぞえり」と「えりのぞ」が両方つけられるような場合があり、<br />
+    前述の順番を加味しない場合と、順番を加味した場合の和は異なっています。</p>
+
+    <p>基本的には「のぞにこ」と「ほのまき」が増えた以外は前の結果とほぼ変わりませんでした。</p>
+
+    <p>なお、前回の結果と比べて「まきりん」が減少していますが、<br />
+    不審に思って調べたところ、「まきりん」タグ自体の登録数は少なく、<br />
+    そもそも前回の結果のような大きい値になることは考えにくいです。</p>
+
+    <p>一方で、タグを完全一致ではなく部分一致にし、「まきりん」の集計に「まきりんぱな」も入れると、<br />
+    似たような大きな値になるため、おそらくはこれが原因だと思われます。</p>
+
+    <h2 id="グラフ-1:35d6efcbb240bfd8ea8ff0f2532638b7">グラフ</h2>
+
+    <p>1,000,000未満の辺がﾐﾄﾒﾗﾚﾅｲ場合、グラフは以下のようになります。</p>
+
+    <p><img src="http://ota42y.com/images/blog/2014/2014-12-26-lovelive_1000000_dict.png" alt="1000000" />
+    </p>
+
+    <p>南ことり、星空凛は常に先に来ているのに対し、西木野真姫、園田海未は誰が相手でも常に後に来ています。</p>
+
+    <p>また、「のぞえり」と「えりのぞ」だけがお互いに辺を作っています。<br />
+    一番人気の「にこまき」の方向がほぼ固定なのと比較すると、かなり特徴的です。</p>
+
+    <p>なお、これ以下の閾値やR-18作品の結果などは前回と大きな変化が見られなかったため、省略します。</p>
+
+    <h1 id="カップリングイラスト投稿数推移:35d6efcbb240bfd8ea8ff0f2532638b7">カップリングイラスト投稿数推移</h1>
+
+    <p>カップリングは全部で72通りあるため、投稿数1,000,000以上のカップリングのアニメ化後の推移をまとめました。<br />
+    なお、月ごとの投稿数で調べたところあまりにも乱高下が激しく、わかりづらいグラフだったため、<br />
+    月ごとの累計投稿数で集計を行いました。</p>
+
+    <h2 id="投稿数1-000-000以上:35d6efcbb240bfd8ea8ff0f2532638b7">投稿数1,000,000以上</h2>
+
+    <p><img src="http://ota42y.com/images/blog/2014/2014-12-26-cp_all.png" alt="投稿数1,000,000以上のカップリングの推移" />
+    </p>
+
+    <p>一期放映直後から、にこまきの投稿数が圧倒的であることがわかります。<br />
+    また、量が多いのでわかりにくいですが、<br />
+    二期第２話「優勝をめざして」の直後あたりに投稿数が一気に伸びていました。</p>
+
+    <p>のぞえりは二期になってから一気に伸びています。<br />
+    詳しく調べたところ、アニメ放映直後からしばらくの間はりんぱなやほのえりとほぼ同じ程度の投稿数でしたが、<br />
+    二月のライブ以降投稿数が増加していき、<br />
+    ５月末の第８話「私の望み」から東條希の誕生日(<sup>6</sup>&frasl;<sub>9</sub>)周辺で一気に増加しました。</p>
+
+    <h2 id="上位２組以外:35d6efcbb240bfd8ea8ff0f2532638b7">上位２組以外</h2>
+
+    <p>にこまき、のぞえりが多すぎるため、この二つを取り除いたグラフも用意しました。</p>
+
+    <p><img src="http://ota42y.com/images/blog/2014/2014-12-26-cp_without.png" alt="にこまきとのぞえり以外のカップリングの推移" />
+    </p>
+
+    <p>りんぱな、ほのえりは一期の頃から投稿数が多かったでしたが、<br />
+    りんぱなが二期も同じぐらい押されて、増加ペースを伸ばしたのに対し、<br />
+    ほのえりは二期ではそれほど押されていなかったためか、増加ペースは変わっていません。</p>
+
+    <p>対してことうみ、えりうみは二期が始まってから増加ペースが伸びていきました。<br />
+    特にことうみは５月頭のコミティアから５月中頃の僕らのラブライブ４にかけて、一気に投稿数が増加していました。</p>
+
+    <p>また、上記の総閲覧数ではりんぱなよりことうみの方が多いのですが、<br />
+    イラストの投稿数自体はりんぱなの方が量が多いです。<br />
+    詳しく調べたところ、最も閲覧数の多いイラストもりんぱなの方が１万ぐらい多いのですが、<br />
+    中央値等はことうみのほうが２倍ぐらい大きくなっていました。<br />
+    あまりデータ分析方法は知らないため、この逆転現象の原因を探るのは難しそうです…</p>
+
+    <h1 id="まとめ:35d6efcbb240bfd8ea8ff0f2532638b7">まとめ</h1>
+
+    <ul>
+    <li>にこまきの人気凄い
+
+    <ul>
+    <li>のぞえり、ことうみ、りんぱなの人気が続く</li>
+    <li>(・8・)ﾎﾉｶﾁｬﾝ…</li>
+    </ul></li>
+    <li>ただし、投稿数1,000,000以上のカップリングに一番出てくるのは高坂穂乃果
+
+    <ul>
+    <li>⊂(・8・)⊃＜ﾎﾉｶﾁｬｧｧｧﾝ!</li>
+    <li>ほのこと、ほのうみ、ほのまき、ほのえりの４つ</li>
+    <li>時点は西木野真姫と園田海未、綾瀬絵里</li>
+    <li>にこまき、ほのまき、りんまき</li>
+    <li>ことうみ、えりうみ、ほのうみ</li>
+    <li>のぞえり、ほのえり、えりうみ</li>
+    </ul></li>
+    <li>キャラ個別と同じく、アニメでフォーカスが当たると投稿数が伸びる</li>
+    <li>投稿数が多い≠閲覧数が多い
+
+    <ul>
+    <li>ものすごい人気の作品があるわけではない</li>
+    <li>絵師さん人気よりも非絵師さん人気があるとか？</li>
+    </ul></li>
+    </ul>
+
+    <h1 id="次回予告:35d6efcbb240bfd8ea8ff0f2532638b7">次回予告</h1>
+
+    <p>次回はラブライブイラストを描いている投稿者の分析をしようと思います。<br />
+    <a href="/blog/2014/12/27/lovelive-age/">pixivのタグから読み解くラブライブイラスト投稿者分析</a></p>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    <div class="social_buttons">
+
+        <span class="twitter">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="ota42y">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </span>
+
+
+
+        <span class="hatena">
+            <a href="http://ota42y.com/blog/2014/12/26/lovelive-cp/" class="hatena-bookmark-button"
+               data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja"
+               title="このエントリーをはてなブックマークに追加">
+                <img src="https://b.st-hatena.comhttp://ota42y.com/images/entry-button/button-only@2x.png"
+                     alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+            </a>
+            <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js"
+                    charset="utf-8" async="async">
+            </script>
+        </span>
+
+    </div>
+
+    </div>
+
+    <footer class="small">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center copyright">
+                    Copyright © 2015 - ota42y powerd by <a href="https://github.com/ota42y/honokichi">Honokichi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+</body>
+</html>

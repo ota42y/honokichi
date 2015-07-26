@@ -1,0 +1,21 @@
+.post_item {
+    margin-bottom: 30px;
+}
+
+.post_item a {
+    color: inherit;
+}
+
+.post_item h3{
+    padding-left: 10px;
+    border-left: thick solid #2196f3;
+    margin-bottom: 5px;
+}
+
+.post_item .post_detail {
+    padding-left: 20px;
+}
+
+.tag_count {
+    padding-left: 20px;
+}

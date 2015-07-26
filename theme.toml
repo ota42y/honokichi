@@ -1,0 +1,11 @@
+name = "honokichi"
+license = "MIT"
+licenselink = "https://github.com/ota42y/honokichi/blob/master/LICENSE.md"
+description = "ota42y.com's theme"
+homepage = "http://ota42y.com/"
+tags = ["blog", "personal"]
+features = ["white", "tags"]
+
+[author]
+  name = "ota42y"
+  homepage = "http://ota42y.com/"
