@@ -59,3 +59,11 @@
 .article h6{
     font-size: 10px;
 }
+
+.article > ul > li {
+    margin-bottom: 20px;
+}
+
+.article > ul > li > p {
+    margin-bottom: 0px;
+}
