@@ -15,6 +15,7 @@
             </div>
         </div>
         <div class="col-md-4">
+          <div class="row">
             {{ if or .TableOfContents }}
             <div id="toc">
                 <div id="toc_body">
@@ -23,6 +24,14 @@
                 </div>
             </div>
             {{ end }}
+            
+          </div>
+          <div class="row">
+            {{ partial "recent.html" . }}
+          </div>
+          <div class="row">
+            {{ partial "profile.html" . }}
+          </div>
         </div>
     </div>
 

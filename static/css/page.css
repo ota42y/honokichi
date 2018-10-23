@@ -8,7 +8,7 @@
 }
 
 #toc #toc_body{
-    background-color: #F9F9F9;
+    background-color: #FFFFFF;
     border: 1px solid #AAAAAA;
     font-size: 95%;
     padding-right: 10px;
@@ -17,6 +17,7 @@
 #toc #toc_index {
     font-weight: bold;
     text-align: center;
+    margin: 5px 0px;
 }
 
 #toc ul {
@@ -25,6 +26,62 @@
 
 #toc li {
     list-style: decimal inside;
+}
+
+#toc li a{
+    color: #333333;
+}
+
+#recent_item {
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    font-size: 110%;
+}
+
+#recent_item_index {
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+#recent_item ul {
+    padding: 0 30px;
+}
+
+#recent_item li {
+    list-style: none;
+    margin-bottom: 13px;
+    line-height: 18px;
+}
+
+#profile {
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    font-size: 95%;
+    padding: 10px;
+}
+
+#profile_index {
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+#profile p{
+    text-align: center;
+    margin: 0px 5px;
+}
+
+#profile .icon{
+    max-width: 40%;
+}
+
+#profile .name{
+    font-size: 30px;
 }
 
 .social_buttons {
@@ -66,4 +123,8 @@
 
 .article > ul > li > p {
     margin-bottom: 0px;
+}
+
+.article img {
+    max-width: 100%;
 }
