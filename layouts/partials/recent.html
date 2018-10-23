@@ -1,0 +1,22 @@
+<div id="recent_item">
+  <div id="recent_item_index">最近の投稿</div>
+  <ul>
+    {{ range $name, $page := first 9 (where .Site.Pages "Section" "blog") }}
+
+    <li>
+      <small>
+        <a href="{{ .RelPermalink }}">
+          {{ if .Date.IsZero  }}
+          {{ else }}
+          <time datetime="{{ .Date.Format "2006-01-02" }}" class="recent_date">
+            {{ .Date.Format "2006-01-02" }}
+          </time>
+          {{ end }}
+          {{ .Title }}
+        </a>
+      </small>
+    </li>
+
+    {{ end }}
+  </ul>
+</div>
